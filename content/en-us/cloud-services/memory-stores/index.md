@@ -51,7 +51,7 @@ Most API calls only consume one request unit, with a few exceptions:
 
 - `Class.MemoryStoreHashMap:UpdateAsync()`
 
-  Consumes a minimum of two units.
+  Consumes atleast 1 unit, but consumes another for setting if the callback doesn't return nil.
 
 - `Class.MemoryStoreHashMap:ListItemsAsync()`
 
